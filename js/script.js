@@ -4,13 +4,13 @@ $(document).ready(function() {
     if (localStorage.getItem('username_input') != null){
         $('#welcome').text('Welcome');
         $('#full_name').text(localStorage.getItem('username_input'));
-        $('#serve').text("It's my honour to serve for you.");
-        $('#user_full_name').text('Switch account');
+        $('#serve').text("It's my honor to serve you.");
+        $('#user_full_name').text('Switch Account');
     } else{
         $('#welcome').text('Experience');
         $('#full_name').text('REAL MAGIC');
-        $('#serve').text("Check our slideshow and the crystal ball");
-        $('#user_full_name').text('Log in');
+        $('#serve').text("Explore our slideshow and crystal ball");
+        $('#user_full_name').text('Log In');
     };
 
     $("#user_full_name").click(function(event) {
@@ -70,7 +70,7 @@ $(document).ready(function() {
         if (complete == true){
             document.location.href="booking_success.html";
         } else{
-            alert("Please ensure input all information correctly. Remember log in your account before booking.");
+            alert("Please make sure all information is entered correctly. Remember to log in to your account before booking.");
         };
 
         event.preventDefault();
@@ -141,7 +141,7 @@ $(document).ready(function() {
         if (complete == true){
             document.location.href="log_in.html";
         } else{
-            alert('Please ensure input all information');
+            alert('Please make sure all information is entered.');
         };
 
         event.preventDefault();
@@ -180,7 +180,7 @@ $(document).ready(function() {
             alert("Welcome back! " + localStorage.getItem('username_input') + " :)");
             document.location.href="index.html";
         } else{
-            alert('Please ensure your Full name and password are right. Make sure sign up before log in.');
+            alert('Please make sure your full name and password are correct. Sign up before logging in.');
         };
 
         event.preventDefault();
@@ -238,7 +238,7 @@ $(document).ready(function() {
         month = traveldate.getMonth() + 1;
         year = traveldate.getFullYear();
 
-        alert('Checking the events in ' + month + '/' + year)
+        alert('Checking events in ' + month + '/' + year)
 
         $('.future_event').css('display', 'flex');
 
